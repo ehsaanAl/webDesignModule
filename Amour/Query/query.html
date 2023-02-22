@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8"> 
+    <title> Query Form </title>
+    <script src="script.js"> </script>
+
+    <link rel="stylesheet" href="que.css">
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav">
+            <img src="img/Amour-logo.png" class="brand-logo" alt="brand logo">   
+        </div>
+</nav>
+
+
+
+    
+    
+
+
+    <div id="overlay">
+        <form name="myForm" action="/action_page.php" method="post">
+
+            <h1> Contact Us </h1>
+
+            <label for="name">Name: </label> 
+            <input type="text" id="name" placeholder="Your Name" required>
+            <small class="error"></small>
+
+
+            <label for="email">Email: </label> 
+            <input type="text" id="email" placeholder="Your Email" required>
+            <small class="error"></small>
+            
+
+            <label>Nature of query: </label>
+
+            <select id="nature">
+
+                <option value="General Enquiry">General Enquiry</option> 
+                <option value="Past Order">Past Order</option> 
+                <option value="Feedback">Feedback</option> 
+                
+            </select>
+
+            
+            <label for="message">Message: </label> 
+            <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+            <small class="error"></small>
+            
+
+
+
+            <div class="center"> 
+                <button type ="button" onclick="myFunction()"> Submit </button>
+               
+            </div>
+
+
+        </form> 
+
+
+    </div>
+   
+</body>
+
+
+
+    
+</html>
